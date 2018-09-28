@@ -38,3 +38,4 @@
 MAILTO=muralitharan@sd.tnq.co.in
 #{6e404207-eb95-4ea7-867e-d1c46bdf5891}# Veeam backup job, do not modify this line
 20 1 * * 6 veeamconfig job start --id {6e404207-eb95-4ea7-867e-d1c46bdf5891} --retriable --highpriority
+#*/5 * * * * wget -O - http://172.16.50.112:8080/doc/api/incident_automail.php >> /home/ithelpdesk/incidentautomail.log 2>&1
